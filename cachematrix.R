@@ -9,6 +9,7 @@ makeCacheMatrix <- function(x = matrix()) {
                 x <<- y
                 i <<- NULL
         }
+        ## This function works to give the value of y to x, no matter what the type that y may be.
         get <- function()x
         setInverse <- function(inverse) i <<-inverse
         getInverse <- function() i 
